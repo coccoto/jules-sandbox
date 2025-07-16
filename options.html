@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Gesture Settings</title>
+  <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+  <h1>Mouse Gesture Settings</h1>
+  <div class="setting">
+    <label for="enabled-checkbox">Enable Extension</label>
+    <input type="checkbox" id="enabled-checkbox">
+  </div>
+  <hr>
+  <table id="gesture-table">
+    <thead>
+      <tr>
+        <th>Gesture</th>
+        <th>Action</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="gesture-list">
+      <!-- Gesture mappings will be listed here -->
+    </tbody>
+  </table>
+  <hr>
+  <h2>Add New Gesture</h2>
+  <div id="add-gesture">
+    <div id="draw-area-container">
+      <p>Draw your gesture below:</p>
+      <canvas id="draw-area" width="200" height="200"></canvas>
+      <p>Preview: <span id="gesture-preview"></span></p>
+    </div>
+    <div>
+      <select id="action-select">
+        <option value="goBack">Go Back</option>
+        <option value="goForward">Go Forward</option>
+        <option value="closeTab">Close Tab</option>
+        <option value="newTab">New Tab</option>
+        <option value="reload">Reload Page</option>
+        <option value="scrollTop">Scroll to Top</option>
+        <option value="scrollBottom">Scroll to Bottom</option>
+      </select>
+      <button id="save-gesture">Save Gesture</button>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
