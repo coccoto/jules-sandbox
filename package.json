@@ -1,0 +1,14 @@
+{
+  "name": "mouse-gestures-extension",
+  "version": "1.0.0",
+  "description": "Mouse Gesture Extension for Chrome",
+  "main": "background.js",
+  "scripts": {
+    "generate-icons": "node generate_icon.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.11.2"
+  }
+}
