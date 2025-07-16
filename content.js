@@ -46,13 +46,6 @@ window.addEventListener('mousemove', (event) => {
   }
 });
 
-window.addEventListener('mouseup', (event) => {
-  if (event.button === 2 && isDrawing) {
-    isDrawing = false;
-    recognizeGesture();
-  }
-});
-
 window.addEventListener('contextmenu', (event) => {
   if (path.length > 1) {
     event.preventDefault();
